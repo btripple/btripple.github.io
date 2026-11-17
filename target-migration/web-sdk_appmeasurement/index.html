@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFlow - Simple Analytics Test Site</title>
+ 
+  <link rel="stylesheet" href="../style.css">
+  <script>
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  </script>
+  <script src="https://assets.adobedtm.com/666644a00be2/9fb7b06430e9/launch-6910bc44c892-development.min.js" async></script>
+  
+  <script>
+  adobeDataLayer.push({"event":"page_view_all","page_name":"home:all","page_type":"info-page"});
+  
+  </script>
+  
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">TechFlow</div>
+      <ul class="nav-links">
+        <li><a href="../">Target + AppMeasurement</a></li>
+        <li><a href="../web-sdk">Web SDK</a></li>
+		<li><a href="./">AppMeasurement + Web SDK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>AppMeasurment + Web SDK</h1>
+      <p>Target, AppMeasurement, & WebSDK installed</p>
+      <button class="cta-button" data-event-type="hero_cta" onclick="trackEvent('hero_cta_click')">Get Started Free</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Why Choose TechFlow?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Real-time Analytics</h3>
+          <p>Get instant insights into user behavior with our real-time dashboard and live event tracking.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Easy Integration</h3>
+          <p>Set up in minutes with our lightweight SDK. No complex configurations needed.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Enterprise Grade</h3>
+          <p>Trust our platform with mission-critical data. 99.9% uptime SLA included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2>Simple Pricing</h2>
+      <div class="pricing-cards">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p>Perfect for small projects</p>
+          <div class="price">$29</div>
+          <p style="font-size: 12px; color: #666; margin-bottom: 20px;">per month</p>
+          <button class="plan-button" data-plan="starter" onclick="trackEvent('pricing_starter_click')">Choose Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Professional</h3>
+          <p>For growing teams</p>
+          <div class="price">$99</div>
+          <p style="font-size: 12px; color: #666; margin-bottom: 20px;">per month</p>
+          <button class="plan-button" data-plan="professional" onclick="trackEvent('pricing_professional_click')">Choose Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p>Custom solutions</p>
+          <div class="price">Custom</div>
+          <p style="font-size: 12px; color: #666; margin-bottom: 20px;">contact us</p>
+          <button class="plan-button" data-plan="enterprise" onclick="trackEvent('pricing_enterprise_click')">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TechFlow. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <!-- Minimal JavaScript -->
+
+
+</body>
+</html>
