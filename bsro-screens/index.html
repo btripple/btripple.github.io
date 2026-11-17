@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BSRO Store Screens</title>
+
+	
+<script src="https://assets.adobedtm.com/299b6e905c1c/7ba71d5d8b0b/launch-a0b78ad6e2a2-development.min.js" async></script>
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+
+</script>
+
+
+
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+						
+						<ul>
+				
+				<li>
+					<a href="#" id="tire_results_click">Tire Selected</a>
+				</li>
+				<li>
+					<a href="#" id="tire_results_click_continue">Tire Selected(Continue)</a>
+				</li>
+		
+				<li>
+					<a href="#" id="session_start">Session Start</a>
+					
+				</li>
+				<li>
+					<a href="#" id="session_end">Session Complete</a>
+				</li>
+				<li>
+					<a href="#" id="select_coupon">Select Coupon</a>
+				</li>
+				<li>
+					<a href="#" id="coupon_pageview">Coupon Pageview</a>
+				</li>
+			</ul>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					
+					<div>
+				
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Aliquam aliquam mauris vel est congue vitae scelerisque lorem porta.
+						</p>
+					</div>
+				</div>
+				<ul>
+			
+			
+				
+				</ul>
+			</div>
+			<div class="body">
+			
+			</div>
+		
+		</div>
+		<div id="footer">
+			<div>
+				
+				
+			</div>
+		
+		</div>
+	</div>
+<script type="text/javascript">
+   var banner="fcac";
+	var adobeDataLayer=adobeDataLayer||[];
+	var event_data={};
+	event_data.banner=banner;
+	event_data.device_type="screen";
+	event_data.page_name="home";
+	event_data.store_id="1234";
+	event_data.app_version="version ZZZ.000.33";
+	event_data.event="pageview";
+	adobeDataLayer.push(event_data);
+
+var tire_results_click=document.querySelector("#tire_results_click")
+  tire_results_click.addEventListener("click",function(){
+
+  adobeDataLayer.push({
+   event: 'select_tire',
+   banner: banner,
+   device_type: 'screen',
+   page_name: 'welcome', 
+   store_id: '30220',
+   tire_id: '1245',
+   article_id: '45R18XL',
+   tire_size:{
+        cross_section:'225',
+        aspect_ratio: '55',
+        diameter: '18'
+    },  
+   tire_brand: 'Bridgestone',
+   vehicle:{
+    year: '2023',
+    make: 'Honda',
+    model: 'Civic',
+    submodel: 'Si' 
+  }
+ });
+
+  event.preventDefault();
+});
+
+var tire_results_click_continue=document.querySelector("#tire_results_click_continue")
+  tire_results_click_continue.addEventListener("click",function(){
+
+adobeDataLayer.push({
+  event: 'select_tire_continue',
+   banner: banner,
+   device_type: 'screen',
+    page_name: 'welcome', 
+  store_id: '30220',
+   tire_id: '1245',
+   article_id: '45R18XL',
+   total_tires: '2',
+   tire_brand: 'Firestone',
+  tire_size:{
+        cross_section:'225',
+        aspect_ratio: '55',
+        diameter: '18'
+    },
+   vehicle:{
+    year: '2023',
+    make: 'Honda',
+    model: 'Civic',
+    submodel: 'Si' 
+  },
+   offer_applied: true
+  });
+event.preventDefault();  
+});
+
+
+
+var session_start=document.querySelector("#session_start")
+  session_start.addEventListener("click",function(){
+
+  adobeDataLayer.push({"event":"session_start"});
+  event.preventDefault();
+});
+
+var session_end=document.querySelector("#session_end")
+  session_end.addEventListener("click",function(){
+
+  adobeDataLayer.push({"event":"session_end","session_end_code":"timeout"});
+  event.preventDefault();
+});
+
+var select_coupon=document.querySelector("#select_coupon")
+  select_coupon.addEventListener("click",function(){
+  adobeDataLayer.push({"event":"select_offer","offer_id":"123456"});
+  event.preventDefault();
+});
+
+var coupon_pageview=document.querySelector("#coupon_pageview")
+  coupon_pageview.addEventListener("click",function(){
+  adobeDataLayer.push({"event":"pageview","page_name":"offer detail","offer_id":"123456"});
+  event.preventDefault();
+});
+
+
+	</script>
+</body>
+</html>
